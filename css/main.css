@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #3ec9e9;
+    background: -webkit-linear-gradient(to right, #2940a4, #3ec9e9);
+    background: linear-gradient(to right, #2940a4, #3ec9e9);
+}
+  
+.container {
+    color: #ced8e4;
+    background: #1e1f2e;
+    margin: 50px auto;
+    border-radius: 20px;
+    border: 1px solid #2b2d42;
+    box-shadow: 5px 5px 5px rgb(43, 45, 66, 0.5);
+    padding: 0;
+}
+  
+.container h1 {
+    padding: 20px 0 10px 20px;
+    font-weight: 600;
+    color: #3ec9e9;
+    text-align: center;
+    text-transform: uppercase;
+}
+  
+.container p {
+    padding-left: 20px;
+    font-size: 0.9em;
+    font-weight: 100;
+}
+.input-group {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.input-group .add-todo {
+    background: transparent;
+    color: #fff;
+    width: 10%;
+    height: 42px;
+    border: 1px solid #fff;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+.input-group .add-todo:hover {
+    background: #3ec9e9;
+    color: #2b2d42;
+    border-color: #3ec9e9;
+}
+#input {
+    margin-top: 20px;
+    padding: 20px;
+    width: 90%;
+    box-sizing: border-box;
+    height: 30px;
+    background: #fff;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    border-top: 1px solid rgb(206, 216, 228, 0.2);
+    border-bottom: 1px solid rgb(206, 216, 228, 0.2);
+    display: block;
+    margin: auto;
+}
+  
+.todo {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.todo p {
+    width: 100%;
+    padding: 10px 0 10px 20px;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    font-weight: 400;
+    border-bottom: 1px solid rgb(206, 216, 228, 0.2);
+    margin-bottom: 0;
+}
+  
+.todo:hover p,
+.todo:hover .delete {
+    cursor: pointer;
+    color: #2b2d42;
+    background: #3ec9e9;
+    transition: all 0.3s ease-in-out;
+}
+  
+.delete {
+    width: 15%;
+    border: none;
+    color: #3ec9e9;
+    background: none;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(206, 216, 228, 0.2);
+}
+
+.delete:focus,
+#input:focus {
+    outline: none;
+}
+  
+.stats {
+    display: flex;
+    background: #2b2d42;
+    border-radius: 0 0 20px 20px;
+}
+  
+#count,
+#completed {
+    padding: 10px 20px;
+}
+  
+#count span,
+#completed span {
+    color: #3ec9e9;
+}
+  
+.completed {
+    text-decoration-line: line-through;
+    color: rgb(206, 216, 228, 0.2);
+}  
